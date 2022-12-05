@@ -127,14 +127,14 @@ public class Car {
             }
 
             public int getNumberOfSeats () {
-                return numberOfSeats;
+                return getNumberOfSeats;
             }
             public void changeTires() {
                 summerTires = !summerTires;
             }
             public boolean isCorrectRegNumber() {
                 if (registrationNumber.length() != 9) {
-                    return false;
+                    return registrationNumber.length;
                 }
                 char[] chars = registrationNumber.toCharArray();
                 if (!Character.isAlphabetic(chars[0]) || !Character.isAlphabetic(chars[4]) || !Character.isAlphabetic(chars[5])) {
